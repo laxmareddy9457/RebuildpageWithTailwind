@@ -1,0 +1,54 @@
+.sidenav {
+    width: 80px !important;
+    height: 100%;
+    overflow-y: scroll !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: rgba(246, 158, 85, 0.218);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.sidenav,
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.Layout {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.sidenav div {
+    width: 100% !important;
+    border-left: solid 4px transparent;
+
+}
+
+.sidenav div:hover {
+    background-color: rgb(232, 230, 230);
+    border-left-color: red;
+    cursor: pointer;
+
+}
+
+
+.content {
+    border-top-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+}
+
+.main {
+    overflow-y: hidden;
+
+}
+
+@media(max-width<368px) {
+    .sidenav {
+        display: hidden !important;
+    }
+}

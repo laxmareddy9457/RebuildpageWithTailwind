@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="m-0 p-0 box-border">
+    <div class="flex bg-black Layout">
+        <div class="sidenav  flex flex-col  items-center bg-[#f0f0f0] overflow-y-auto py-5">
+            <div class=" flex flex-col items-center p-2">
+                <i stroke-width="1.5" data-feather="grid"></i>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <i stroke-width="1.5" data-feather="home"></i>
+                <p class="text-[10px]">Home</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <i stroke-width="1.5" data-feather="plus-circle"></i>
+                <p class="text-[10px]">Create</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <i stroke-width="1.5" data-feather="folder"></i>
+                <p class="text-[10px]">folder</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/appicon.png" class="h-8" />
+                <p class="text-[10px]">Apps</p>
+            </div>
+
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/adminicon.png" class="h-8" alt="Admin" />
+                <p class="text-[10px]">Admin</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/outllok.png" class="h-8" alt="Outlook" />
+                <p class="text-[10px]">Outlook</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/teams.png" class="h-8" alt="Teams" />
+                <p class="text-[10px]">Teams</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/word.png" class="h-8" alt="Word" />
+                <p class="text-[10px]">Word</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/excel.png" class="h-8" alt="Excel" />
+                <p class="text-[10px]">Excel</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/powerpoint.png" class="h-8" alt="PowerPoint" />
+                <p class="text-[10px]">PowerPoint</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="./resources/onenote.png" class="h-8" alt="OneNote" />
+                <p class="text-[10px]">OneNote</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <i data-feather="more-horizontal"></i>
+            </div>
+        </div>
+        <div class="main bg-[#f0f0f0] w-full flex flex-col ">
+            <section class=" h-20  bg-[#f0f0f0] flex items-center justify-between px-6">
+                <section>
+                    <h1 class="text-red-600 text-sm md:text-xl lg:text-2xl">Microsoft 365</h1>
+                </section>
+                <section class="w-[50%] flex gap-4 p-2 bg-white rounded border border-gray-300">
+                    <i data-feather="search" class="text-red-600 mr-2"></i>
+                    <input type="text" placeholder="Search" class="w-[100%] outline-none" />
+                </section>
+                <section>
+                    <div class="hidden md:flex items-center gap-4">
+                        <i stroke-width="1" data-feather="calendar"></i>
+                        <i stroke-width="1" data-feather="settings"></i>
+                        <i stroke-width="1" data-feather="help-circle"></i>
+                        <button
+                            class="border-2 border-gray-300 rounded-full p-1 w-10 h-10 flex items-center justify-center bg-gray-200">
+                            <span class="font-medium">S</span>
+                        </button>
+                    </div>
+                </section>
+            </section>
+            <section class="content overflow-y-auto pb-16 h-lvh bg-gray-200">
+                <div
+                    class="rounded-tl-xl flex items-center bg-gradient-to-r from-red-100 to-blue-100 py-4 px-4 text-sm">
+                    <img src="./resources/microsoftoffice.png" class="ml-auto  h-6 mr-2 " />
+                    <i data-feather="arrow-right" class="h-4 w-4 mr-2"></i>
+                    <img src="./resources/microsoft365.png" class="h-6 mr-2" />
+                    <span>
+                        The Office app is becoming the new Microsoft 365 app. Your home to
+                        find, create, and share your content and ideas.
+                        <span class="text-red-600  cursor-pointer">Learn More</span>
+                    </span>
+                    <i stroke-width="1" data-feather="x" class="ml-auto cursor-pointer"></i>
+                </div>
+                <div class="mt-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+                    <div class="flex items-center justify-between p-2">
+                        <h2 class="text-xl font-semibold">Apps</h2>
+                        <button
+                            class="flex items-center bg-red-600 text-white px-3 py-1 rounded-md text-sm hover:bg-red-700">
+                            <i data-feather="plus-square" class="mr-1"></i> Add apps
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-6">
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/teams.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">Teams</h6>
+                        </div>
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/word.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">Word</h6>
+                        </div>
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/excel.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">Excel</h6>
+                        </div>
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/powerpoint.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">PowerPoint</h6>
+                        </div>
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/outllok.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">Outlook</h6>
+                        </div>
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/Onedrive.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">OneDrive</h6>
+                        </div>
+                        <div
+                            class="bg-white shadow p-4 rounded-lg flex flex-col items-center hover:shadow-lg transition">
+                            <img src="./resources/onenote.png" class="h-12" />
+                            <h6 class="mt-2 text-sm font-medium">OneNote</h6>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="text-red-600 hover:underline text-sm">
+                            All apps →
+                        </button>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mt-4 mb-3">Previously added</h3>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/Appstudio.png" class="h-8 mr-3" />
+                                <p>App Studio</p>
+                            </div>
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/assignmenticon.png" class="h-8 mr-3" />
+                                <p>Assignments</p>
+                            </div>
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/excelfull.png" class="h-8 mr-3" />
+                                <p>Excel</p>
+                            </div>
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/powerbi.png" class="h-8 mr-3" />
+                                <p>Power BI</p>
+                            </div>
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/powerpointfull.png" class="h-8 mr-3" />
+                                <p>PowerPoint</p>
+                            </div>
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/taskmodule.png" class="h-8 mr-3" />
+                                <p>Task Module Sample</p>
+                            </div>
+                            <div class="flex items-center  p-3 rounded-md hover:shadow-lg transition cursor-pointer">
+                                <img src="./resources/wordfull.png" class="h-8 mr-3" />
+                                <p>Word</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <button
+                            class="border border-gray-400 rounded-full px-4 py-1 text-sm hover:bg-black hover:text-white transition">
+                            Productivity
+                        </button>
+                        <button
+                            class="border border-gray-400 rounded-full px-4 py-1 text-sm hover:bg-black hover:text-white transition">
+                            Utilities
+                        </button>
+                        <button
+                            class="border border-gray-400 rounded-full px-4 py-1 text-sm hover:bg-black hover:text-white transition">
+                            Education
+                        </button>
+                        <button
+                            class="border border-gray-400 rounded-full px-4 py-1 text-sm hover:bg-black hover:text-white transition">
+                            4 more+
+                        </button>
+                    </div>
+
+
+            </section>
+        </div>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
