@@ -13,7 +13,7 @@
 <body class="m-0 p-0 box-border">
     <div class="flex bg-black h-[100vh]  ">
         <div
-            class="sidenav w-[80px] overflow-y-scroll h-[100%]  flex flex-col  items-center bg-[#f0f0f0] overflow-y-auto py-5">
+            class="sidenav w-[80px] overflow-y-scroll h-[100%]  flex flex-col  items-center bg-[#f0f0f0] overflow-y-auto py-5 [@media(max-width:368px)]:hidden">
             <div class=" flex flex-col items-center p-2  w-[100%]">
                 <i stroke-width="1.5" data-feather="grid"></i>
             </div>
@@ -66,7 +66,7 @@
                 <i data-feather="more-horizontal"></i>
             </div>
         </div>
-        <div class="main bg-[#f0f0f0] w-full flex flex-col ">
+        <div class="bg-[#f0f0f0] w-full flex flex-col ">
             <section class=" h-20  bg-[#f0f0f0] flex items-center justify-between px-6">
                 <section>
                     <h1 class="text-red-600 text-sm md:text-xl lg:text-2xl">Microsoft 365</h1>
@@ -87,7 +87,8 @@
                     </div>
                 </section>
             </section>
-            <section class="content rounded-tl-xl overflow-y-auto pb-16 h-lvh bg-gray-200">
+            <section
+                class="content rounded-tl-xl overflow-y-auto pb-16 h-lvh bg-gray-200 shadow-[0_0_0_1px_rgba(0,0,0,0.05)]">
                 <div
                     class="rounded-tl-xl flex items-center bg-gradient-to-r from-red-100 to-blue-100 py-4 px-4 text-sm">
                     <img src="./resources/microsoftoffice.png" class="ml-auto  h-6 mr-2 " />
